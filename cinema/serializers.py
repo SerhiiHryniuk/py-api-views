@@ -32,7 +32,7 @@ class MovieSerializer(serializers.Serializer):
             "duration", instance.duration
         )
         instance.save()
-        if actors:
+        if actors:#
             instance.actors.set(actors)
         if genres:
             instance.genres.set(genres)
